@@ -24,7 +24,7 @@ def run_simulation(
     passengers: list[Passenger],
     metric: Metric,
     *,
-    rates: list[float] | None = None,
+    rates: Sequence[float] | None = None,
     verbose: bool = True,
     sim_time: int = 60 * 24,
 ) -> None:
@@ -35,7 +35,7 @@ def run_simulation(
     routes = create_routes(stops_e, stops_w, roads)
 
     if rates is None:
-        rates = [
+        rates = (
             0.3,
             0.6,
             0.1,
@@ -50,7 +50,7 @@ def run_simulation(
             0.4,
             0.6,
             0.4,
-        ]
+        )
 
     for i in range(0, len(rates), 2):
         idx = i // 2
