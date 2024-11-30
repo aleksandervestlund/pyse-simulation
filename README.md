@@ -1,4 +1,4 @@
-# TTM 4110 - Smart City Bus Simulations
+# TTM4110 - Smart City Bus Simulations
 
 > By: Andreas Kolstad Bertelsen and Aleksander Thornes Vestlund.
 
